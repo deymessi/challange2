@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title><%= titulo %></title>
+        <link rel="stylesheet" type="text/css" href="f001/css/freelancer.css">
+        <link rel="stylesheet" type="text/css" href="f001/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="f001/css/font-awesome.css">
+
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript"src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        
+
+        <script type="text/javascript" src="bower_components/angular/angular_resource.js">
+        </script>
+        <script src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-utils.min.js"></script>
+        <script type="text/javascript" src="bower_components/satellizer/satellizer.js"></script>
+
+        <script src="javascripts/app.js"></script>
+        <script type="text/javascript" src="javascripts/control/inicio.js"></script>
+        <script type="text/javascript" src="javascripts/servicio/capitan.js"></script>
+        <script type="text/javascript" src="javascripts/control/registro.js"></script>
+    
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheets" type="text/css" href="stylesheets/back/style.css"></link>
+
+
+</head>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Navegador</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Challenge</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#/login">login</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  <h1>Hola andamos trabajando un poco :)</h1>   
+            </div>
+           
+        </div>
+
+    </header>
+
+    <div class="row container">
+        <div ui-view class="col-lg-12"> </div>
+    </div>
+    <!--js necesarios-->
+     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js">
+     </script>
+        
+    <!--fin js-->
+</body>
+</html>
