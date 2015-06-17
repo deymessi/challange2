@@ -17,8 +17,8 @@
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0"
   },
-  "engine":{
-    "node":"1.6.x",
-    "npm":"1.2.x"
+ "engines":{
+    "node":"1.6.4",
+    "npm":"2.7.5"
   }
 }
