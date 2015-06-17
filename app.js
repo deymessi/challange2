@@ -34,7 +34,7 @@ app.use(app.router);
 
 //realizamos una conexion a la base de datos
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/challenge', function(error){
+mongoose.connect('mongodb://deyber:deyber@ds047782.mongolab.com:47782/challenge', function(error){
        if(error){
           throw error; 
        }else{
@@ -77,5 +77,5 @@ app.use(function(err, req, res, next) {
     });
 });
 
-
+http.createServer(app).listen(process.env.PORT || 8080)
 module.exports = app;
