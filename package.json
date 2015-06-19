@@ -16,10 +16,5 @@
     "moment": "^2.10.3",
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0"
-  },
- "engines":{
-    "node":"1.6.x",
-    "npm":"2.7.5",
-    "express":"3.x.x"
   }
 }
