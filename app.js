@@ -11,6 +11,7 @@ var  mid=require('./servicios/middleware.js');
 
 
 var app = express();
+http.createServer(app).listen(process.env.PORT || 8080);
 app.configure(function(){
     app.use(express.bodyParser());
     app.use(express.methodOverride());
@@ -76,6 +77,4 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
-
-http.createServer(app).listen(process.env.PORT || 8080)
 module.exports = app;
